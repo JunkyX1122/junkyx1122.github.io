@@ -1,0 +1,9 @@
+---
+
+layout: default
+title: CSC8503 Greenbulon 7
+image: cool image
+
+---
+
+CSC8502 was graficks!

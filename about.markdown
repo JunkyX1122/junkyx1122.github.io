@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I'm HeavyMetalGameDev, or Matthew, an MComp Computer Science with Games Engineering student at Newcastle University, currently in my 4th and final year.
+I'll be graduating in 2024 and will be looking to enter the industry as a Graduate Games Programmer!
+My programming interests vary: I typically find any aspect of games programming interesting, especially more technical tasks.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I am currentoy working on:
+-Pirate Software Game Jam. Me and my coursemates decided to work on a game jam together, and this one in particular suited our timeframe and intentions well. The main focus of the game is to do some technically interesting mechanics (which may not be new to games in general, but theyre new to us!) such as compute shaders and recognising a player's drawing strokes. This is made in the Unity game engine.
+-Hogworld. Hogworld was born out of the intention to create a finished, interesting portfolio piece, and will be a small videogame created in Unity. My main reason for doing this project was to try some systems I have not done before, such as programming a tile based world and interaction system from scratch, and a dialogue system.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+(I also like metal music.)

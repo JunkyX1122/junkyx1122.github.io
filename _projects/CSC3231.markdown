@@ -1,0 +1,12 @@
+---
+
+layout: project
+title: CSC3231 Planet of the Goblins
+thumbnail:
+videolink: youtube.com
+shortdescription: Graphical project created in Unity.
+permalink: /CSC3231
+priority: 4
+---
+
+CSC3231 was cool!

@@ -1,0 +1,13 @@
+---
+
+layout: project
+title: CSC3232 Mean Green Fellow 2
+thumbnail: 
+videolink: youtube.com
+shortdescription: Physics, AI and Gameplay project created in Unity.
+permalink: /CSC3232
+priority: 5
+
+---
+
+CSC3232 was cool!

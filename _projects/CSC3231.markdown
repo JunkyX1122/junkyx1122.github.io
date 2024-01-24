@@ -18,6 +18,7 @@ For CSC3231, the task was to create a graphical scene in unity to render a plane
 - Multiple textures on the planet's surface.
 - Multiple light sources.
 - Comfortably running above 60fps.
+The coursework was given a grade of 100%.
 
 <h1>Procedural Generation</h1>
 For the procedural generation of the planet, I followed a video series by <a href = "https://www.youtube.com/watch?v=QN39W020LqU&list=PLFt_AvWsXl0cONs3T0By4puYy6GM22ko8">Sebastian Lague </a> in which he creates a prodecural planet in Unity.
@@ -27,10 +28,15 @@ The generation worked by creating a cube with 6 seperate faces of many vertices,
 - I did not implement the shaders that he used for the planet surface, and instead created by own from scratch using Unity's ShaderGraph.
 
 <h1>Shaders</h1>
-At this point in my programming career, I had not touched upon writing shaders before, and given the small timeframe of the project, I decided not to learn HLSL (the shader language that Unity utilises). 
+At this point in my programming career, I had not touched upon writing shaders before, and given the small timeframe of the project, I decided not to learn HLSL (the shader language that Unity utilises). I instead used ShaderGraph, a Unity feature that provides a visual scripting solution to create shaders.
+For the water, I adapted <a href="https://assetstore.unity.com/packages/vfx/shaders/urp-stylized-water-shader-proto-series-187485">this shader</a> slightly to make the ripple effects and scrolling look more appropriate for a spherical surface.
+The terrain shader simply blends between 3 different textures based on the distance from the centre of the planet.
+The skybox shader is more complex: it firstly changes between two different inputs based on distance, one that samples a space skybox and one that is generated using the position of the sun. The day/night cycle is driven by the angle between the camera's position and the sun, with a lower angle being more "day" and a larger one being more "night".
 
 <h1>What went well</h1>
 Overall, I think the scene is quite visually cohesive, and I am quite proud with what I managed to make. The lens flare definitely contributes to the visual quality, and I an happy with what I managed to do with ShaderGraph, having never used it before.
+I am obviously very happy with the grade it was given, as I could not really improve in that regard.
+I am quite proud that I managed to implement some procedural generation, even if it was mostly by following a video series, as I still understood the concepts used.
 <h1>What I would improve</h1>
 One of my main criticisms with the project is the visual artifacts, caused by lighting. This is a by-product of creating the planet using many seperate meshes, instead of one large mesh. A key improvement would be to solve this issue.
 Another visual artifact that can be seen is shadow acne. I think the main cause of this the planet's circular nature, and how that interacts with the directional light of the scene. To improve this, I would spend more time investigating the issue and experimenting with Unity's shadowmapping settings.

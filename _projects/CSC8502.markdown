@@ -9,4 +9,34 @@ permalink: /CSC8502
 priority: 1
 ---
 
-CSC8502 was graficks!
+<h1>Summary</h1>
+For CSC8502, the specification was to create a graphical scene of a planet surface, which transitions to a space scene some way. The module had a variety of tutorial content to teach us the basics of OpenGL and common techniques. The main features of my scene were:
+-Deferred rendering with multiple moving lights in the scene. This also supports unlit objects (such as sprites and the skybox) and transparent objects (such as the lake). 
+-Transparent green water that raises/lowers over time, and uses subtle environment mapping to reflect the skybox. 
+-Terrain that appears to be lit by the lake, done by a height-based fragment shader. The effect of this is written to a new buffer texture, and is ignored when calculating lighting, such that the effect is seen even when the terrain is unlit. 
+-Particle systems using GPU instancing for rain and bubbles rising from the lake. These particles use 2D sprites and billboarding to always face the camera. 
+-Lightning which periodically strikes and illuminates the scene. 
+-Smooth transition between the two scenes, each using a different scene graph. 
+-Frustum culling to improve scene efficiently. 
+-Animated 2D sprites which use spritesheets in the fragment shader to animate over time. 
+-Animated 3D meshes which animate over time and can be lit by deferred lights. 
+-A simple material system to easilly change the textures and shaders of scene nodes, and so new scene nodes can easily be added. 
+-Post processing to introduce screen clouding as the camera approaches the clouds in the surface scene / the planet in the space scene. 
+-FXAA post processing to smooth jagged edges and to improve visual quality. 
+-A camera that moves around the scene along a track. 
+-60fps on the lab pcs. 
+
+<h1>Extensions of the tutorials</h1>
+The tutorial content for this module covered a variety of graphical topics, but my main extensions from it were:
+<h2>Particle system</h2>
+Particle systems were not covered in the tutorials, so I decided to find out some ways to implement them. I found <a href="http://www.opengl-tutorial.org/intermediate-tutorials/billboards-particles/particles-instancing/">this tutorial</a> and followed the implementation, making some changes along the way. For example, I removed some of the fields for the particle struct, as I did not care about the weight and size of the particles for the purpose of my project. I also initially decided to allow for animated particles, storing the current frame of animation the particle was on, but I decided against this due to the time constraints. My particle system uses GPU instancing, so that all particles can be rendered with a single OpenGL draw call.
+
+<h2>Sprite Animation</h2>
+For the coursework, I wanted a way to render 2D sprites that face the camera. I created a vertex shader which manipulates the model-view matrix to eliminate any rotations, such that the quad is always facing the camera.
+Animation of the sprites takes place in the fragment shader, where a texture holding the spritesheet is sampled based on the current frame of animation
+
+<h1>What went well</h1>
+For my first exposure to OpenGL, I think I created a relatively visually cohesive scene.
+<h1>What I would improve</h1>
+My main flaw with the coursework, and the only area in which I think I dropped marks, was my lack of shadow mapping in the scene. This was covered in the tutorial content, which I completed and implemented in a tutorial scene, but did not get around to adding it to my coursework scene. If I had a day or two more, I think I could have achieved this.
+Additionally, my code overall was slightly messy and could definitely be more readable. In particular, my function for setting up all the objects in the scene is very long, though I could not have simplified this much without creating some sort of custom engine tool.

@@ -1,12 +1,12 @@
 ---
 
 layout: project
-title: CSC8503 Average Heist of the Golden Goose
-thumbnail: \assets\goose.png
-videolink: youtube.com
-shortdescription: Physics, AI and Networking project created using C++.
+title: Engine Dev - Something About CSC8503 Coursework
+thumbnail: \assets\csc8503_thumbnail.jpg
+videolink: https://www.youtube.com/watch?v=0b1s1qEZ80Y&t=9s
+shortdescription: <li>University Coursework<li>C++ physics, AI, networking development project<li>4 week development
 permalink: /CSC8503
 priority: 2
 ---
-
-CSC8503 was cool!
+<h2>Languages: C++</h2>
+For this module, I was instructed to put together a space scene and planet surface scene using OpenGL. I implemented a variety of graphical techniques using the knowledge gained from tutorials and assistance from lecturers.

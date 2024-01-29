@@ -5,10 +5,15 @@ layout: default
 
 {%for project in ordered_projects %}
     <h1>{{project.title}}</h1>
-    {{project.shortdescription}} <br>
+    {{project.shortdescription}} <br><br>
     <a href={{project.permalink}}>
         <img src={{project.thumbnail}} alt={{project.title}}>
     </a>
+    <h2>
+        <a href={{project.permalink}}>
+            <center>See more info</center>
+        </a>
+    </h2>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <hr>

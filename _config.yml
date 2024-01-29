@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HeavyMetalGameDev
-email: hahoo
-description: The site of HeavyMetalGameDev, a graduate C++ games programmer with a penchant for metal.
+title: Erick Grant Daleon
+email: erickgrantbd@gmail.com
+description: Portfolio website for MComp graduate Erick Grant Daleon.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  HeavyMetalGameDev
+github_username:  JunkyX1122
 
 collections:
   projects:

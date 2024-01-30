@@ -4,7 +4,7 @@ layout: default
 {% assign ordered_projects = site.projects | sort:"priority"%}
 
 {%for project in ordered_projects %}
-    <h1>{{project.title}}</h1>
+    <a href={{project.permalink}}><h1>{{project.title}}</h1></a>
     {{project.shortdescription}} <br><br>
     <a href={{project.permalink}}>
         <img src={{project.thumbnail}} alt={{project.title}}>

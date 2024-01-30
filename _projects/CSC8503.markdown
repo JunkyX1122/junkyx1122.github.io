@@ -9,4 +9,36 @@ permalink: /CSC8503
 priority: 2
 ---
 <h2>Languages: C++</h2>
-For this module, I was instructed to put together a space scene and planet surface scene using OpenGL. I implemented a variety of graphical techniques using the knowledge gained from tutorials and assistance from lecturers.
+<h1>About</h1>
+This module required me to create a small game in C++ using an engine build I had to build mostly from scratch. The game I ended up making was a third-person multiplayer game where players run around collecting crystals and bring them back to home base, whilst avoiding other players and the enemies within the level. I was required to implement the physics, enemy AI and a form of networking using the knowledge we gained from lectures and tutorials. Using the turoials I was able to set up:
+<li>Collision: Detection and resolution between rays, AABB cubes and spheres.
+<li>AI: State machines and finding algorithms.
+<li>Networking: Basic server-client text communication.
+</li>
+<br>
+We were also given same base graphics library provided in the previous model. A lot of elements that were crucial in making a propper engine were left out.<br>
+<h1>Beyond Taught Material</h1>
+<li><a href="#Server-Client Setup">Server-Client Setup</a>
+<li><a href="#Server-Client Joining">Server-Client Joining</a>
+<li><a href="#Server-Client In-Game">Server-Client In-Game</a>
+<li><a href="#Capsule Collision">Capsule Collision</a>
+<li><a href="#Enemy AI">Enemy AI</a>
+<li><a href="#Grapple Hook">Grapple Hook</a>
+</li>
+<div id="Server-Client Setup"></div>
+<h2>Server-Client Setup</h2>
+
+<div id="Server-Client Joining"></div>
+<h2>Server-Client Joining</h2>
+
+<div id="Server-Client In-Game"></div>
+<h2>Server-Client In-Game</h2>
+
+<div id="Capsule Collision"></div>
+<h2>Capsule Collision</h2>
+
+<div id="Enemy AI"></div>
+<h2>Enemy AI</h2>
+
+<div id="Grapple Hook"></div>
+<h2>Grapple Hook</h2>

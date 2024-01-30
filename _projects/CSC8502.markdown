@@ -10,7 +10,7 @@ priority: 1
 ---
 <h2>Languages: C++, GLSL</h2>
 <h1>About</h1>
-For this module, I was instructed to put together a space scene and planet surface scene using OpenGL. I implemented a variety of graphical techniques using the knowledge gained from tutorials and assistance from lecturers. Some of the basic graphical techniques that were covered within lecture material,which you can see within this project, include:
+For this module, I put together a space scene and planet surface scene using OpenGL. I implemented a variety of graphical techniques using the knowledge gained from tutorials and assistance from lecturers. Some of the basic graphical techniques that were covered within lecture material, which you can see within this project, include:
 <li>Texturing: as seen in every mesh on screen.
 <li>Depth and transparency: allowing the scene to be 3D.
 <li>Per-fragment lighting: darkening areas not facing a central light source.
@@ -18,10 +18,15 @@ For this module, I was instructed to put together a space scene and planet surfa
 </li>
 <br>
 <h1>The Cooler Parts</h1>
-Despite this project being my first time propperly working with the graphics pipeline and lower-level rendering, I already had many ideas as to how to enhance the scene. I really like visual flare.
-<br><br>
+Despite this project being my first time propperly working with the graphics pipeline and lower-level rendering, I already had many ideas as to how to enhance the scene. I really like visual flare. This includes:
+<li><a href="#Camera Work">Camera Work</a>
+<li><a href="#Scrolling Spherical Textures">Scrolling Spherical Textures</a>
+<li><a href="#Bloom Post Processing">Bloom Post Processing</a>
+<li><a href="#Pixelize Post Process">Pixelize Post Process</a>
+</li>
+<div id="Camera Work"></div>
 <h2>Camera Work</h2>
-The part of the project I am proud of the most. The first thing I did was to introduce movement smoothening by interpolating the camera's current position and its destination. I also applied this same logic to the yaw, pitch and roll of the camera.<br>
+The part of the project I am proud of the most. I introduced movement smoothening by interpolating the camera's current position and its destination. I also applied this same logic to the yaw, pitch and roll of the camera.<br>
 <div class = "box">
     <pre>
     float dampenCam = 0.01f;
@@ -55,9 +60,10 @@ Afterwards, I created a basic keyframing system to interpolate the target destin
     }</pre>
 </div>
 <center><img src="assets/csc8502_00.gif"><br></center>
-<center>And just like that, I can achive a cinematic fly-through of the scene!</center><br>
+<center>And with that I am able to achive a cinematic fly-through of the scene.</center><br>
 As seen in the video at the start of this page, this whole process allows me to sync the movement up to music.<br><br>
-<h2>Scrolling Planet Texture</h2>
+<div id="Scrolling Spherical Textures"></div>
+<h2>Scrolling Spherical Texture</h2>
 With the code provided by the tutorials, it was simple to create a scrolling texture on a quad. However, this logic was not applicable to the planets in my scene due to their spherical shape. To get a texture to scroll longitudinally and latitudinally, I had to create a sepperate fragment shader for the planets where the UV coordinates were transformed to be in a longitude-latitude.
 <div class = "box">
     <pre>
@@ -77,6 +83,7 @@ With the code provided by the tutorials, it was simple to create a scrolling tex
 </div>
 <center><img src="assets/csc8502_04.gif"><br></center>
 <center>Cloud scrolling sped up for demonstration purposes.<br><br></center>
+<div id="Bloom Post Processing"></div>
 <h2>Bloom Post Processing</h2>
 The concept of post processing was introduced within the tutorials, but its extent was to simply just blur screen. With this, you can put together a form of "bloom" by adding the blurred image's colours to the base the base image, but I was not satisfied with this alone.<br>
 First, I created a shader grabs the areas of the image above a certain lightness threshold.
@@ -152,6 +159,7 @@ All that was left was too add the final result to the base image.<br><br>
 <img src="assets/csc8502_01.png"><br><center>Shader Off</center><br>
 
 <img src="assets/csc8502_02.png"><br><center>Shader On</center><br>
+<div id="Pixelize Post Process"></div>
 <h2>Pixelize Post Processing</h2>
 For the transition between the ground scene and the space scene, I put together a simple pixelisation shader.
 <div class = "box">

@@ -20,6 +20,7 @@ We were also given same base graphics library provided in the previous model. A 
 <h1>Beyond Taught Material</h1>
 <li><a href="#Server-Client Network">Server-Client Network</a>
 <li><a href="#Capsule Collision">Capsule Collision</a>
+<li><a href="#Anti-Jitter">Anti-Jitter</a>
 <li><a href="#Enemy AI">Enemy AI</a>
 <li><a href="#Grapple Hook">Grapple Hook</a>
 </li>
@@ -161,6 +162,57 @@ The only information the client sends over on the other hand are the player's in
 <center>Client Input Packet Construction</center><br>
 <div id="Capsule Collision"></div>
 <h2>Capsule Collision</h2>
+Capsule collision between other capsules or other volume types mainly consisted of the same logic used for sphere collisions. Given that a capsule consists of an inner length and a radius, I was able to detect capsule collisions by finding the closest point between the capsule's inner line and other lines/points.<br>
+<div class = "box">
+    <pre>
+    void CollisionDetection::ClosestPoints_TwoLines(
+        float* ratio1, float* ratio2, 
+        Vector3 firstLineStart, Vector3 firstLineEnd,
+        Vector3 secondLineStart, Vector3 secondLineEnd)
+    {
+        Vector3 firstLineVector = firstLineEnd - firstLineStart;
+        Vector3 secondLineVector = secondLineEnd - secondLineStart;
+
+        Vector3 SMinusF = secondLineStart - firstLineStart;
+
+        float dotSS = Vector3::Dot(secondLineVector, secondLineVector);
+        float dotFF = Vector3::Dot(firstLineVector, firstLineVector);
+        float dotSF = Vector3::Dot(secondLineVector, firstLineVector);
+        float dotSMF_F = Vector3::Dot(SMinusF, firstLineVector);
+        float dotSMF_S = Vector3::Dot(SMinusF, secondLineVector);
+
+        float dotSF2 = dotSF * dotSF;
+        float dotSSdotFF = dotSS * dotFF;
+        float denom = (dotSF2 - dotSSdotFF);
+        if (denom == 0)
+        {
+            *ratio1 = 0.0f;
+            *ratio2 = (dotFF * (*ratio1) - dotSMF_F) / dotSF;
+        }
+        else
+        {
+            *ratio1 = (dotSMF_S * dotSF - dotSS * dotSMF_F) / denom;
+            *ratio2 = (-dotSMF_F * dotSF + dotFF * dotSMF_S) / denom;
+        }
+        *ratio1 = std::clamp((*ratio1), 0.0f, 1.0f);
+        *ratio2 = std::clamp((*ratio2), 0.0f, 1.0f);
+    }
+    void CollisionDetection::ClosestPoints_PointLine(
+        float* lineRatio, Vector3 point, Vector3 lineStart, Vector3 lineEnd)
+    {
+        Vector3 heading = (lineEnd - lineStart);
+        float magnitudeMax = heading.Length();
+        heading.Normalise();
+        Vector3 lhs = point - lineStart;
+        float dotP = Vector3::Dot(lhs, heading) / magnitudeMax;
+        *lineRatio = std::clamp((dotP), 0.0f, 1.0f);
+    }
+</pre>
+</div>
+<center><img src="assets/csc8503_02.png"></center><br>
+<center>It's important</center><br>
+<div id="Anti-Jitter"></div>
+<h2>Anti-Jitter</h2>
 
 <div id="Enemy AI"></div>
 <h2>Enemy AI</h2>

@@ -1,7 +1,7 @@
 ---
 
 layout: project
-title: Team Project - (NAME PENDING)
+title: Team Project - Speed Fun
 thumbnail: \assets\csc8508_thumbnail.png
 videolink: https://www.youtube.com/watch?v=0b1s1qEZ80Y&t=9s
 shortdescription: <li>University Coursework<li>C++ game project with team<li>8 week development
@@ -9,4 +9,3 @@ permalink: /CSC8508
 priority: 3
 ---
 <h2>Languages: C++, GLSL</h2>
-For this module, I was instructed to put together a space scene and planet surface scene using OpenGL. I implemented a variety of graphical techniques using the knowledge gained from tutorials and assistance from lecturers.

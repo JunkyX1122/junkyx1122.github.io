@@ -18,22 +18,147 @@ This module required me to create a small game in C++ using an engine build I ha
 <br>
 We were also given same base graphics library provided in the previous model. A lot of elements that were crucial in making a propper engine were left out.<br>
 <h1>Beyond Taught Material</h1>
-<li><a href="#Server-Client Setup">Server-Client Setup</a>
-<li><a href="#Server-Client Joining">Server-Client Joining</a>
-<li><a href="#Server-Client In-Game">Server-Client In-Game</a>
+<li><a href="#Server-Client Network">Server-Client Network</a>
 <li><a href="#Capsule Collision">Capsule Collision</a>
 <li><a href="#Enemy AI">Enemy AI</a>
 <li><a href="#Grapple Hook">Grapple Hook</a>
 </li>
-<div id="Server-Client Setup"></div>
-<h2>Server-Client Setup</h2>
+<div id="Server-Client Network"></div>
+<h2>Server-Client Network</h2>
+<h3>Setup</h3>
+For the networking, I utilised the enet library to establish connections between a server and clients. Within the start menu, you can chose to set up as a server or client. 
+<div class = "box">
+    <pre>
+    void CourseworkGame::InitialiseGameAsServer()
+    {
+        ...
+        levelDataBeingUsed = worldDatas_Level[levelID];
+        itemDataBeingUsed = worldDatas_Item[levelID];
+        NetworkBase::Initialise();
+        int port = NetworkBase::GetDefaultPort();
+        gameServer = new GameServer(port, MAX_CLIENTS, 
+                                    [&](int peerId) { OnPlayerConnect(peerId); }, 
+                                    [&](int peerId) { OnPlayerDisconnect(peerId); });
+        gameServer->RegisterPacketHandler(Received_State, this);
+        ...
+    }
+    void CourseworkGame::InitialiseGameAsClient()
+    {
+        ...
+        NetworkBase::Initialise();
+        int port = NetworkBase::GetDefaultPort();
+        gameClient = new GameClient([&](int peerId) { });
+        gameClient->RegisterPacketHandler(Full_State, this);
 
-<div id="Server-Client Joining"></div>
-<h2>Server-Client Joining</h2>
+        gameClient->RegisterPacketHandler(Player_Info, this);
+        gameClient->RegisterPacketHandler(GlobalPlayer_Info, this);
+        gameClient->RegisterPacketHandler(Player_DrawLine, this);
+        gameClient->RegisterPacketHandler(Server_Information, this);
 
-<div id="Server-Client In-Game"></div>
-<h2>Server-Client In-Game</h2>
+        bool canConnect = gameClient->Connect(127, 0, 0, 1, port);
+        connected = canConnect;
+        clientConnectionTimer = SERVER_CONNECTION_TIMELIMIT;
+        ...
+    }
+</pre>
+</div>
+<img src="assets/csc8503_00.png"><br><center></center><br>
+The server is able to select the level the clients will be playing on, and the clients will load the appropriate level when connecting with the server.<br>
+<div class = "box">
+    <pre>
+    if (gameState == GAME_WAITINGFORPLAYERS || gameState == GAME_NOTSTARTED)
+    {
+        GamePacket* newPacket = nullptr;
+        ServerInformation* sp = new ServerInformation();
+        sp->levelID = levelID;
+        newPacket = sp;
+        gameServer->SendGlobalPacket(*newPacket);
+        delete newPacket;
+    }
+</pre>
+</div>
+Should the server go down, take too long to send packets or the client attempt to join a non-existant server, the client will be sent back to the main menu.<br>
+<div class = "box">
+    <pre>
+    void CourseworkGame::UpdateAsClient(float dt)
+    {
+        if (gameClient)
+        {
+            clientConnectionTimer -= dt;
+            world->ResetObjectNetworkUpdateList();
+            gameClient->UpdateClient();
+            if (clientConnectionTimer <= 0)
+            {
+                connected = false;
+                return;
+            }
+            ...
+    }
 
+    void CourseworkGame::ReceivePacket(int type, GamePacket* payload, int source)
+    {
+        switch (type)
+        {
+            case(BasicNetworkMessages::Player_Info):
+            {  
+                PlayerInfoPacket* infoPacket = (PlayerInfoPacket*)payload;
+                ...
+                clientConnectionTimer = CONNECTION_TIMEOUT;
+            }
+            ...
+    }
+</pre>
+</div>
+<img src="assets/csc8503_01.png"><br><center></center><br>
+
+<h3>Updating</h3>
+Both server and client load in the same world. The main difference between them being that the client performs no calculations, whilst the server cannot recieve manual inputs nor renders the gameworld (For demonstration purposes, the video linked in this page renders the scene). The server sends over:
+<li>The current states of non-static objects.
+<li>Scoring information - specific client's score and the current highest scoring player's score.
+<li>In-game state information - timer.
+<li>Player-specific information - dash timer, which player object they are.
+</li>
+The only information the client sends over on the other hand are the player's inputs.
+<div class = "box">
+    <pre>
+    struct GlobalPlayerInfoPacket : GamePacket
+    {
+        int leader;
+        int leaderScore;
+        int playerIDs[MAX_CLIENTS];
+        PlayerState playerStates[MAX_CLIENTS];
+        GlobalPlayerInfoPacket() 
+        {
+            type = GlobalPlayer_Info;
+            size = sizeof(GlobalPlayerInfoPacket);
+        }
+    };</pre>
+</div>
+<center>Server Packet Example</center><br>
+<div class = "box">
+    <pre>
+    void CourseworkGame::ClientSendInputs()
+    {
+        ClientPacket newPacket;
+        bool clientLastStateUpdate = false;
+        for (int i = 0; i < 8; i++)
+        {
+            newPacket.buttonstates[i] = '0';
+        }
+        if (Window::GetKeyboard()->KeyPressed(KeyCodes::SPACE)) {
+            newPacket.buttonstates[0] = '1';
+            clientLastStateUpdate = true;
+        }
+        else if (Window::GetKeyboard()->KeyDown(KeyCodes::SPACE))
+        {
+            newPacket.buttonstates[0] = '2';
+            clientLastStateUpdate = true;
+        }
+        ...
+    }
+</pre>
+</div>
+<center>Client Input Packet Construction</center><br>
 <div id="Capsule Collision"></div>
 <h2>Capsule Collision</h2>
 

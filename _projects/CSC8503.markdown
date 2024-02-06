@@ -11,7 +11,7 @@ priority: 2
 <h2>Languages: C++</h2>
 <h1>About</h1>
 This module required me to create a small game in C++ using an engine build I had to build mostly from scratch. The game I ended up making was a third-person multiplayer game where players run around collecting crystals and bring them back to home base, whilst avoiding other players and the enemies within the level. I was required to implement the physics, enemy AI and a form of networking using the knowledge we gained from lectures and tutorials. Using the turoials I was able to set up:
-<li>Collision: Detection and resolution between rays, AABB cubes and spheres.
+<li>Collision: Detection and resolution between rays, Axis-Aligned Bounding Boxes and spheres.
 <li>AI: State machines and finding algorithms.
 <li>Networking: Basic server-client text communication.
 </li>
@@ -20,7 +20,6 @@ We were also given same base graphics library provided in the previous model. A 
 <h1>Beyond Taught Material</h1>
 <li><a href="#Server-Client Network">Server-Client Network</a>
 <li><a href="#Capsule Collision">Capsule Collision</a>
-<li><a href="#Anti-Jitter">Anti-Jitter</a>
 <li><a href="#Enemy AI">Enemy AI</a>
 <li><a href="#Grapple Hook">Grapple Hook</a>
 </li>
@@ -209,13 +208,57 @@ Capsule collision between other capsules or other volume types mainly consisted 
     }
 </pre>
 </div>
-<center><img src="assets/csc8503_02.png"></center><br>
-<center>It's important</center><br>
-<div id="Anti-Jitter"></div>
-<h2>Anti-Jitter</h2>
+<center><img src="assets/csc8503_02.png"></center>
+<center>In the cases of capsules and AABB collision volumes, checking to see if the end points of a capsule are closest to the volume needed to be done (1 and 3 in the image above).</center><br>
 
 <div id="Enemy AI"></div>
 <h2>Enemy AI</h2>
-
+For the enemy AI, they currently have a state where they wander the map (move to a random location) and a state where they chase the player. Which state they are in depends on if they can see the player or not. To achieve this, a ray in the direction to each active player is cast. What was important was that this ray needed to ignore certain objects so I assigned each object created in the game world a specific layer identification. Furthermore, since an enemy can only chase one thing at a time, a check to see which visible player is closest is done before assigning that enemy a target. 
+<div class = "box">
+    <pre>
+    vector&lt;GameObject*&gt; visiblePlayers;
+    for (auto pO : playerObjects)
+    {
+        PlayerObject* objectAsPlayer = (PlayerObject*)pO;
+        if (!objectAsPlayer->IsAssigned()) continue;
+        Ray ray(this->GetTransform().GetPosition(), 
+                (pO->GetTransform().GetPosition() - 
+                this->GetTransform().GetPosition()).Normalised());
+        RayCollision closestCollision;
+        std::vector&lt;int&gt; ignoreList = { LAYER_ENEMY, LAYER_ITEM , LAYER_TRIGGER };
+        if (gameWorld->Raycast(ray, closestCollision, true, nullptr, ignoreList))
+        {
+            GameObject* selectionObject = (GameObject*)closestCollision.node;
+            if (selectionObject->GetBoundingVolume()->collisionLayer == LAYER_PLAYER)
+            {
+                visiblePlayers.push_back(pO);
+            }
+        }
+    }
+    float range = 10000.0f;
+    for (auto vPO : visiblePlayers)
+    {
+        float rangeFromVPO = (this->GetTransform().GetPosition() 
+                              - vPO->GetTransform().GetPosition()).Length();
+        if (rangeFromVPO < range)
+        {
+            this->SetObjectTarget(vPO);
+            range = rangeFromVPO;
+        }
+    }
+</pre>
+</div>
+In both states, the enemy uses the A* algorithm to find their way to their destination. To move along this path, they just apply a force in the direction of the next node in the graph.
+<div class = "box">
+    <pre>
+    void EnemyObject::MoveAlongPath(float dt)
+    {
+        Vector3 direction = (this->GetNextPathNode() - 
+                             this->GetTransform().GetPosition()).Normalised();
+        this->GetPhysicsObject()->AddForce(direction * this->GetMoveSpeed() * dt);
+    }
+</pre>
+</div>
+<center><img src="assets/csc8503_03.png"></center><br>
 <div id="Grapple Hook"></div>
 <h2>Grapple Hook</h2>

@@ -262,3 +262,41 @@ In both states, the enemy uses the A* algorithm to find their way to their desti
 <center><img src="assets/csc8503_03.png"></center><br>
 <div id="Grapple Hook"></div>
 <h2>Grapple Hook</h2>
+It's a grappling hook. 
+<div class = "box">
+    <pre>
+    if (playerInputs[playerID][MOUSE_RIGHT] == IS_UP)
+    {
+        pO->ResetGrappling();
+    }
+    else if (playerInputs[playerID][MOUSE_RIGHT] == IS_DOWN && !pO->IsGrappling())
+    {
+        Ray ray = CollisionDetection::BuildRayFromCentre(world->GetMainCamera());
+        RayCollision closestCollision;
+        std::vector&ltint&gt ignoreList = { LAYER_PLAYER, LAYER_ITEM, LAYER_TRIGGER };
+        if (world->Raycast(ray, closestCollision, true, nullptr, ignoreList))
+        {
+            if (!pO->IsGrappling())
+            {
+                pO->SetGrapplePoint(closestCollision.collidedAt);
+                pO->SetGrappling(true);
+                
+            }
+        }
+        else
+        {
+            pO->ResetGrappling();
+        }
+
+    }
+
+    if (pO->IsGrappling())
+    {
+        float grappleForce = 40.0f;
+        Vector3 direction = (pO->GetGrapplePoint() - 
+                             pO->GetTransform().GetPosition()).Normalised();
+        pO->GetPhysicsObject()->AddForce(direction * grappleForce * dt);
+    }
+</pre>
+</div>
+<center><img src="assets/csc8503_04.gif"></center><br>

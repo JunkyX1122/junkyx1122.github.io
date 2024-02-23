@@ -18,7 +18,8 @@ Due to how niche this engine is, a brief explaination of the engine is probably 
 <h1>Notable Parts of the Game</h1>
 
 <h2>Background-Foreground Interaction</h2>
-
+<center><img src="assets/azurekappa_tesla1.gif"><br></center><br>
+<center><img src="assets/azurekappa_tesla2.gif"><br></center><br>
 <h2>UI</h2>
 <h3>HUD</h3>
 <center><img src="assets/azurekappa_ui.gif"><br></center><br>
@@ -26,7 +27,6 @@ Due to how niche this engine is, a brief explaination of the engine is probably 
 <center><img src="assets/azurekappa_dialogue.gif"><br></center><br>
 <h3>Boss Tracker</h3>
 <center><img src="assets/azurekappa_bossmarker.gif"><br></center><br>
-
 
 <h2>VFX</h2>
 

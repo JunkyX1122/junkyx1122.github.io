@@ -15,8 +15,10 @@ For this module, I put together a space scene and planet surface scene using Ope
 <li>Depth and transparency: allowing the scene to be 3D.
 <li>Per-fragment lighting: darkening areas not facing a central light source.
 <li>Deffered lighting: as seen when viewing the crystals on the ground scene.
-</li>
-<br>
+</li><br>
+Github repo at: <a href="https://github.com/JunkyX1122/GraphicsCourse">https://github.com/JunkyX1122/GraphicsCourse</a>.<br>
+Majority of code that isn't tutorial code can be found in the 'Blank Project' and 'Shaders' folders.
+<br><br>
 <h1>The Cooler Parts</h1>
 Despite this project being my first time propperly working with the graphics pipeline and lower-level rendering, I already had many ideas as to how to enhance the scene. I really like visual flare. This includes:
 <li><a href="#Camera Work">Camera Work</a>

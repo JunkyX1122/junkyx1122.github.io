@@ -17,6 +17,10 @@ This module required me to create a small game in C++ using an engine build I ha
 </li>
 <br>
 We were also given same base graphics library provided in the previous model. A lot of elements that were crucial in making a propper engine were left out.<br>
+<br>
+Github repo at: <a href="https://github.com/JunkyX1122/CSC8503-2023">https://github.com/JunkyX1122/CSC8503-2023</a>.<br>
+Majority of code that isn't tutorial code can be found in the 'CSC8503' and 'CSC8503CoreClasses' folders.<br><br>
+
 <h1>Beyond Taught Material</h1>
 <li><a href="#Server-Client Network">Server-Client Network</a>
 <li><a href="#Capsule Collision">Capsule Collision</a>

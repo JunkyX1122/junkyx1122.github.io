@@ -3,7 +3,7 @@
 layout: project
 title: Team Game Jam - Goo Surge
 thumbnail: \assets\goosurge_thumbnail.png
-videolink: https://nijelous.itch.io/goo-surge
+videolink: https://www.youtube.com/watch?v=oQwHR7VOWQQ
 shortdescription: <li>Pirate Software Game Jam 14<li>Unity/C# based game with team<li>2 week development
 permalink: /GooSurge
 priority: 5
@@ -16,7 +16,8 @@ My main contributions to the game were:
 <li>Ensuring that said player felt satisfying to control.
 <li>Building the main tool needed make the enviroment.
 <li>Some art used inside and out of the game (including the main thumbnail art).<br><br>
-
+Github repo at: <a href="https://github.com/HeavyMetalGameDev/pirate-game-jam">https://github.com/HeavyMetalGameDev/pirate-game-jam</a>.<br>
+Download game at: <a href="https://nijelous.itch.io/goo-surge">https://nijelous.itch.io/goo-surge</a>.<br><br>
 <h2>Camera Movement</h2>
 We decided on having the camera pan towards where the mouse was going to point. Because the mouse was probably going to move around a lot, I needed to ensure that the camera moved
 smoothly regardless of how drastic the mouse movements were.<br><br>

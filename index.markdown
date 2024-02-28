@@ -14,7 +14,7 @@ I'm Erick, a student at Newcastle University who is set to graduate the MComp Ga
 in games programming through making bullet hells in a niche engine. I am currently focusing on learning C++ and have already made a few projects within the language. I'm 
 hoping to get a job within the games industry and make a start to my game engineering and development career.
 <br><br>
-This website is dedicated to showing off various projects I have worked on in and outside of education. Below are some images showing off the types of projects I have done. For information on individual projects, you can click on the <a href="/Portfolio">Portfolio</a> tab at the top of the page.
+This website is dedicated to showing off various projects I have worked on in and outside of education. Below are some images showing off the types of projects I have done. For information on individual projects, you can click on the <a href="/Portfolio">Portfolio</a> tab at the top of the page, or click on the images below.
 <br><br>
 
 <style type="text/css"> 
@@ -28,22 +28,32 @@ This website is dedicated to showing off various projects I have worked on in an
 
 <center>
 <h1>Project Snippets</h1>
+<a href="/CSC8502">
 <img src="assets/main_00.png" width="240" height="240">
 <img src="assets/main_01.png" width="240" height="240"><span class="brmedium"></span>
+</a>
 
+<a href="/GooSurge">
 <img src="assets/main_04.png" width="240" height="240">
 <img src="assets/main_05.png" width="240" height="240">
 <img src="assets/main_06.png" width="240" height="240"><span class="brmedium"></span>
+</a>
 
+<a href="/CSC8503">
 <img src="assets/main_02.png" width="240" height="240">
 <img src="assets/main_03.png" width="240" height="240"><span class="brmedium"></span>
+</a>
 
+<a href="/AzureKappa">
 <img src="assets/main_07.png" width="240" height="240">
 <img src="assets/main_08.png" width="240" height="240">
 <img src="assets/main_09.png" width="240" height="240"><span class="brmedium"></span>
+</a>
 
+<a href="/CrimsonKappa">
 <img src="assets/main_10.png" width="240" height="240">
 <img src="assets/main_11.png" width="240" height="240">
+</a>
 <br><br>
 <h2><a href="/Portfolio">==================To Portfolio==================</a></h2>
 </center>

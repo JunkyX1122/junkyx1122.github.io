@@ -21,6 +21,8 @@ Due to how niche this engine is, a brief explaination of the engine is probably 
 <center><img src="assets/azurekappa_tesla1.gif"><br></center><br>
 <center><img src="assets/azurekappa_tesla2.gif"><br></center><br>
 <h2>UI</h2>
+<h3>Menu</h3>
+<center><img src="assets/azurekappa_menu.gif"><br></center><br>
 <h3>HUD</h3>
 <center><img src="assets/azurekappa_ui.gif"><br></center><br>
 <h3>Text-Chat Dialogue Box</h3>
@@ -29,7 +31,7 @@ Due to how niche this engine is, a brief explaination of the engine is probably 
 <center><img src="assets/azurekappa_bossmarker.gif"><br></center><br>
 
 <h2>VFX</h2>
-
-
-<h2>Attack Design</h2>
-
+<center><img src="assets/azurekappa_masterspark.gif"><br></center><br>
+<center><img src="assets/azurekappa_spelltransition.gif"><br></center><br>
+<center><img src="assets/azurekappa_wings.gif"><br></center><br>
+<center><img src="assets/azurekappa_lasers.gif"><br></center><br>

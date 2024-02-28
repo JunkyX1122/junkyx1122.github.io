@@ -19,6 +19,7 @@ Download game and code at: <a href="https://www.bulletforge.org/u/junky/p/azure-
 <h1>Notable Parts of the Game</h1>
 
 <h2>Background-Foreground Interaction</h2>
+Wowie.
 <center><img src="assets/azurekappa_tesla1.gif"><br></center><br>
 <center><img src="assets/azurekappa_tesla2.gif"><br></center><br>
 <h2>UI</h2>

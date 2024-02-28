@@ -5,6 +5,10 @@
 layout: home
 ---
 
-THIS WHOLE THING IS A WORK IN PROGRESS. I GOT LENT THIS TEMPLATE AND RIGHT NOW I AM FOCUSING ON TRYING TO GET THE CONTENT DOWN FIRST BEFORE I WORRY ABOUT APPEARANCE AND FORMNATTING!
-- Erick
-
+<center><h1>Portfolio of Erick Grant Daleon</h1></center>
+<center><h2>
+C++/C# Games programmer. Graduating MComp (Game Engineering) student of Newcastle University.<br>
+Programming games since 2015.</h2></center>
+<br>
+This website is dedicated to showing off various projects I have worked on in and outside of education. Below is a small description
+of who I am, as well as some images showing off the types of projects I have done. For information on individual projects, you can click on the <a href="/Portfolio">Portfolio</a> tab at the top of the page, or click one of the images below.

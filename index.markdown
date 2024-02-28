@@ -27,17 +27,23 @@ This website is dedicated to showing off various projects I have worked on in an
 
 
 <center>
+<h1>Project Snippets</h1>
 <img src="assets/main_00.png" width="240" height="240">
-<img src="assets/main_01.png" width="240" height="240"><span class="brmedium"></span> 
+<img src="assets/main_01.png" width="240" height="240"><span class="brmedium"></span>
+
 <img src="assets/main_04.png" width="240" height="240">
 <img src="assets/main_05.png" width="240" height="240">
-<img src="assets/main_06.png" width="240" height="240"><span class="brmedium"></span> 
+<img src="assets/main_06.png" width="240" height="240"><span class="brmedium"></span>
+
 <img src="assets/main_02.png" width="240" height="240">
-<img src="assets/main_03.png" width="240" height="240"><span class="brmedium"></span> 
+<img src="assets/main_03.png" width="240" height="240"><span class="brmedium"></span>
+
 <img src="assets/main_07.png" width="240" height="240">
 <img src="assets/main_08.png" width="240" height="240">
-<img src="assets/main_09.png" width="240" height="240"><span class="brmedium"></span> 
+<img src="assets/main_09.png" width="240" height="240"><span class="brmedium"></span>
+
 <img src="assets/main_10.png" width="240" height="240">
 <img src="assets/main_11.png" width="240" height="240">
-
+<br><br>
+<h2><a href="/Portfolio">==================To Portfolio==================</a></h2>
 </center>

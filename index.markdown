@@ -55,5 +55,5 @@ This website is dedicated to showing off various projects I have worked on in an
 <img src="assets/main_11.png" width="240" height="240">
 </a>
 <br><br>
-<h2><a href="/Portfolio">==================To Portfolio==================</a></h2>
+<h2><a href="/Portfolio">===To Portfolio===</a></h2>
 </center>

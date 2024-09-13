@@ -50,10 +50,4 @@ This website is dedicated to showing off various projects I have worked on in an
 <img src="assets/main_09.png" width="240" height="240"><span class="brmedium"></span>
 </a>
 
-<a href="/CrimsonKappa">
-<img src="assets/main_10.png" width="240" height="240">
-<img src="assets/main_11.png" width="240" height="240">
-</a>
-<br><br>
-<h2><a href="/Portfolio">===To Portfolio===</a></h2>
 </center>

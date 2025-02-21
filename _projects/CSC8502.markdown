@@ -6,7 +6,7 @@ thumbnail: \assets\csc8502_thumbnail.jpg
 videolink: https://www.youtube.com/watch?v=Lsr0kqC8J34
 shortdescription: <li>University Coursework<li>C++/OpenGL rendering project<li>4 week development
 permalink: /CSC8502
-priority: 1
+priority: 3
 ---
 <h2>Languages: C++, GLSL</h2>
 <h1>About</h1>

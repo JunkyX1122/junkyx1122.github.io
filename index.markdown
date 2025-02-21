@@ -7,11 +7,12 @@ layout: home
 
 <center><h1>Portfolio of Erick Grant Daleon</h1></center>
 <center><h2>
-C++ Games Programmer. Graduating MComp (Game Engineering) Student of Newcastle University.<br>
+C++ Games Programmer. Graduated from Newcastle University with an MComp (Game Engineering).<br>
 Programming games since 2015.</h2></center>
 <br>
-I'm Erick, a student at Newcastle University who is set to graduate the MComp Game Engineering course by July 2024. I have a passion for visual flare, game-feel and made my start
-in games programming through making bullet hells in a niche engine. I am currently focusing on learning C++ and have already made a few projects within the language. I'm 
+I'm Erick, a games programmer and software development generalist who graduated from Newcastle University first class in July 2024. I have a passion for visual flare, game-feel and made my start
+in games programming through making bullet hells in a niche engine. I am able to progam in languages such as Python, C#, C, Java and willing to learn anything and face any challenge.
+I am currently focusing on learning C++ and have already made a few projects within the language. I'm 
 hoping to get a job within the games industry and make a start to my game engineering and development career.
 <br><br>
 This website is dedicated to showing off various projects I have worked on in and outside of education. Below are some images showing off the types of projects I have done. For information on individual projects, you can click on the <a href="/Portfolio">Portfolio</a> tab at the top of the page, or click on the images below.

@@ -1,7 +1,7 @@
 ---
 
 layout: project
-title: Bullethell Game - Snowy Standoffs (Page Under Construction)
+title: Bullet Hell Game - Snowy Standoffs (Page Under Construction)
 thumbnail: \assets\snowystandoffs_thumbnail.jpg
 videolink: https://youtu.be/xbfk6fk8bu0?si=VKdNsIeEP7LFAYoT&t=9933
 shortdescription: <li>Private Group Gift Event<li><a href=https://en.touhouwiki.net/wiki/Touhou_Danmakufu>Danmakufu</a> Full Game<li>Intial 2 month development

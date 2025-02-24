@@ -4,7 +4,7 @@ layout: project
 title: Team Game Jam - Goo Surge
 thumbnail: \assets\goosurge_thumbnail.png
 videolink: https://www.youtube.com/watch?v=oQwHR7VOWQQ
-shortdescription: <li>Pirate Software Game Jam 14<li>Unity/C# based game with team<li>2 week development
+shortdescription: <ul><li>Pirate Software Game Jam 14</li><li>Unity/C# based game with team</li><li>2 week development</li></ul>
 permalink: /GooSurge
 priority: 5
 ---

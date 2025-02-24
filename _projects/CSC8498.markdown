@@ -4,7 +4,7 @@ layout: project
 title: MComp Dissertation - Exploration of GPU Accelerated Rendering in OpenGL
 thumbnail: \assets\csc8498_thumbnail.jpg
 videolink: https://studio.youtube.com/video/gIa92k8-7dc/edit
-shortdescription: <li>University Dissertation<li>C++, OpenGL, Indirect Rendering<li>4 week development</li>
+shortdescription: <ul><li>University Dissertation</li><li>C++, OpenGL, Indirect Rendering</li><li>4 week development</li></ul>
 permalink: /CSC8498
 priority: 3
 ---

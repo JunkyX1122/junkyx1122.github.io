@@ -4,7 +4,7 @@ layout: project
 title: Bullet Hell Game Jam - Azure Kappa
 thumbnail: \assets\azurekappa_thumbnail.jpg
 videolink: https://www.youtube.com/watch?v=4qSoef-nxNo&t=384s
-shortdescription: <li>Bullet Hell Artistry Constest 3<li><a href=https://en.touhouwiki.net/wiki/Touhou_Danmakufu>Danmakufu</a> single boss fight game<li>1 month development
+shortdescription: <ul><li>Bullet Hell Artistry Constest 3</li><li><a href=https://en.touhouwiki.net/wiki/Touhou_Danmakufu>Danmakufu</a> single boss fight game</li><li>1 month development</li></ul>
 permalink: /AzureKappa
 priority: 4
 ---

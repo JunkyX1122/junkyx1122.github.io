@@ -4,7 +4,7 @@ layout: project
 title: Rendering - Space Place
 thumbnail: \assets\csc8502_thumbnail.jpg
 videolink: https://www.youtube.com/watch?v=Lsr0kqC8J34
-shortdescription: <li>University Coursework<li>C++/OpenGL rendering project<li>4 week development
+shortdescription: <ul><li>University Coursework</li><li>C++/OpenGL rendering project</li><li>4 week development</li></ul>
 permalink: /CSC8502
 priority: 1
 ---

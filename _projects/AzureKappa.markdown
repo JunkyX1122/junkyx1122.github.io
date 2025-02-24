@@ -16,21 +16,22 @@ they were the final boss. There were a total of 24 contestants and a time limit 
 asset creation, debugging, playtesting and working with a 3D artist, I was able to rank 1st place!<br>
 
 <h1>Key Skills Used</h1>
-<li>Time Management
-<li>UI Design
-<li>VFX Design
-<li>Attention to Detail
-<li>Creative Thinking
-<li>Creativity
-<li>3D Maths
-<li>Parametric Equasions
-<li>Enemy AI Design
-<li>Creative Writing
-<li>3D Scene Composition
-<li>Communication with Asset Creators
-<li>Game Feel
+<ul>
+<li>Time Management</li>
+<li>UI Design</li>
+<li>VFX Design</li>
+<li>Attention to Detail</li>
+<li>Creative Thinking</li>
+<li>Creativity</li>
+<li>3D Maths</li>
+<li>Parametric Equasions</li>
+<li>Enemy AI Design</li>
+<li>Creative Writing</li>
+<li>3D Scene Composition</li>
+<li>Communication with Asset Creators</li>
+<li>Game Feel</li>
 <li>Game Flow
-</li><br>
+</li></ul>
 <h1>Brief Engine Background Knowledge</h1>
 Due to how niche this engine is, a brief explaination of the engine is probably needed. In short, Danmakufu is a 2D engine designed specifically for the creation of bullet hells. It's optimised to handle a large amount of projectiles on screen and was initially created for japanese fans of the 'Touhou' series to make their own inspired games. Everything is coded in the scripting language 'DNH', which resembles C. By default, the engine comes with the basics of a game engine (sprite rendering, sound ect.) but in comparison to more well known engines, it's increadibly lacking. Despite all this, it is still the main choice of engine when it comes to making Touhou-inspired games due to many of the most popular fangames using this engine.
 

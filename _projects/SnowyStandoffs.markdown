@@ -19,23 +19,23 @@ Note: The video link provided is temporary and is a part of a demonstration stre
 <center><img src="assets/snowystandoffs_preview.jpg"><br></center><br>
 
 <h1>Key Skills Used</h1>
-<li>Time Management
-<li>Project Management
-<li>DevOps
-<li>Agile
-<li>Visual Debugging
-<li>Version Control
-<li>GitHub
-<li>Teamwork and communication with asset creators and playtesters
-<li>Creativity
-<li>HLSL Code
-<li>Game Design
-<li>Risk Assessment
-<li>Brainstorming and Concept Art
-<li>Menu and UI Design
+<ul>
+<li>Time Management</li>
+<li>Project Management</li>
+<li>DevOps</li>
+<li>Agile</li>
+<li>Visual Debugging</li>
+<li>Version Control</li>
+<li>GitHub</li>
+<li>Teamwork and communication with asset creators and playtesters</li>
+<li>Creativity</li>
+<li>HLSL Code</li>
+<li>Game Design</li>
+<li>Risk Assessment</li>
+<li>Brainstorming and Concept Art</li>
+<li>Menu and UI Design</li>
 <li>Game Feel
-</li>
-<br>
+</li></ul>
 <h1>Brief Engine Background Knowledge</h1>
 Due to how niche this engine is, a brief explaination of the engine is probably needed. In short, Danmakufu is a 2D engine designed specifically for the creation of bullet hells. It's optimised to handle a large amount of projectiles on screen and was initially created for japanese fans of the 'Touhou' series to make their own inspired games. Everything is coded in the scripting language 'DNH', which resembles C. By default, the engine comes with the basics of a game engine (sprite rendering, sound ect.) but in comparison to more well known engines, it's increadibly lacking. Despite all this, it is still the main choice of engine when it comes to making Touhou-inspired games due to many of the most popular fangames using this engine.<br><br>
 <h1>Context</h1>
@@ -45,16 +45,16 @@ small audience this was initially intended for, there are a lot of elements this
 Though I do not intend for this to be my final work within this medium, this is by far the grandest game I have made so far. For this project, I worked on the code, the artwork, the design, the enemy attacks, the backgrounds and
 much more. This was primarily a solo project, however I had some help with writing towards the end of the project. Full details are given during the credits sequence.<br><br>
 In total, the project as of December 2024 contains:
-<li>3 playable routes with unique dialogue and ending sequences
-<li>6 stages, with 3 varients for stage 1 and 4
-<li>63 total boss patterns
-<li>Over 1100 lines of dialogue
-<li>15 characters with complete dialogue portait components
-<li>A loading sequence, main menu, game progression, ending and credits sequence
-<li>A funcitonal options and practice menu
-<li>Save data and unlockables
-</li>
-<br>
+<ul>
+<li>3 playable routes with unique dialogue and ending sequences</li>
+<li>6 stages, with 3 varients for stage 1 and 4</li>
+<li>63 total boss patterns</li>
+<li>Over 1100 lines of dialogue</li>
+<li>15 characters with complete dialogue portait components</li>
+<li>A loading sequence, main menu, game progression, ending and credits sequence</li>
+<li>A funcitonal options and practice menu</li>
+<li>Save data and unlockables</li>
+</ul>
 A lot of the hard work is pretty much done, just missing the regular stage portions for each stage. Once the stage portions are complete, there will be a full release. But for now, I can provide a link to those who view my portfolio.<br>
 Github link at: <a href="https://github.com/JunkyX1122/secret-santa-2024">https://github.com/JunkyX1122/secret-santa-2024</a>.<br><br>
 

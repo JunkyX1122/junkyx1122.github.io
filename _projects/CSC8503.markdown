@@ -8,13 +8,14 @@ shortdescription: <li>University Coursework<li>C++ physics, AI, networking devel
 permalink: /CSC8503
 priority: 2
 ---
-<h2>Languages: C++ (Custom Engine)</h2>
+<h2>Languages: C++ (Custom Engine). Grade: 98%.</h2>
 <h1>About</h1>
 This module required me to create a small game in C++ using an engine build I had to build mostly from scratch. The game I ended up making was a third-person multiplayer game where players run around collecting crystals and bring them back to home base, whilst avoiding other players and the enemies within the level. I was required to implement the physics, enemy AI and a form of networking using the knowledge we gained from lectures and tutorials. Using the turoials I was able to set up:
-<li>Collision: Detection and resolution between rays, Axis-Aligned Bounding Boxes and spheres.
-<li>AI: State machines and finding algorithms.
+<ul>
+<li>Collision: Detection and resolution between rays, Axis-Aligned Bounding Boxes and spheres.</li>
+<li>AI: State machines and finding algorithms.</li>
 <li>Networking: Basic server-client text communication.
-</li>
+</li></ul>
 <br>
 We were also given same base graphics library provided in the previous model. A lot of elements that were crucial in making a propper engine were left out.<br>
 <br>
@@ -22,11 +23,12 @@ Github repo at: <a href="https://github.com/JunkyX1122/CSC8503-2023">https://git
 Majority of code that isn't tutorial code can be found in the 'CSC8503' and 'CSC8503CoreClasses' folders.<br><br>
 
 <h1>Beyond Taught Material</h1>
-<li><a href="#Server-Client Network">Server-Client Network</a>
-<li><a href="#Capsule Collision">Capsule Collision</a>
-<li><a href="#Enemy AI">Enemy AI</a>
+<ul>
+<li><a href="#Server-Client Network">Server-Client Network</a></li>
+<li><a href="#Capsule Collision">Capsule Collision</a></li>
+<li><a href="#Enemy AI">Enemy AI</a></li>
 <li><a href="#Grapple Hook">Grapple Hook</a>
-</li>
+</li></ul>
 <div id="Server-Client Network"></div>
 <h2>Server-Client Network</h2>
 <h3>Setup</h3>
@@ -117,11 +119,12 @@ Should the server go down, take too long to send packets or the client attempt t
 
 <h3>Updating</h3>
 Both server and client load in the same world. The main difference between them being that the client performs no calculations, whilst the server cannot recieve manual inputs nor renders the gameworld (For demonstration purposes, the video linked in this page renders the scene). The server sends over:
-<li>The current states of non-static objects.
-<li>Scoring information - specific client's score and the current highest scoring player's score.
-<li>In-game state information - timer.
+<ul>
+<li>The current states of non-static objects.</li>
+<li>Scoring information - specific client's score and the current highest scoring player's score.</li>
+<li>In-game state information - timer.</li>
 <li>Player-specific information - dash timer, which player object they are.
-</li>
+</li></ul>
 The only information the client sends over on the other hand are the player's inputs.
 <div class = "box">
     <pre>

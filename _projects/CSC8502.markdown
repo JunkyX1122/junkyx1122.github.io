@@ -6,26 +6,28 @@ thumbnail: \assets\csc8502_thumbnail.jpg
 videolink: https://www.youtube.com/watch?v=Lsr0kqC8J34
 shortdescription: <li>University Coursework<li>C++/OpenGL rendering project<li>4 week development
 permalink: /CSC8502
-priority: 3
+priority: 1
 ---
-<h2>Languages: C++, GLSL (Custom Engine)</h2>
+<h2>Languages: C++, GLSL (Custom Engine). Grade: 92%.</h2>
 <h1>About</h1>
 For this module, I put together a space scene and planet surface scene using OpenGL. I implemented a variety of graphical techniques using the knowledge gained from tutorials and assistance from lecturers. Some of the basic graphical techniques that were covered within lecture material, which you can see within this project, include:
-<li>Texturing: as seen in every mesh on screen.
-<li>Depth and transparency: allowing the scene to be 3D.
-<li>Per-fragment lighting: darkening areas not facing a central light source.
+<ul>
+<li>Texturing: as seen in every mesh on screen.</li>
+<li>Depth and transparency: allowing the scene to be 3D.</li>
+<li>Per-fragment lighting: darkening areas not facing a central light source.</li>
 <li>Deffered lighting: as seen when viewing the crystals on the ground scene.
-</li><br>
+</li></ul><br>
 Github repo at: <a href="https://github.com/JunkyX1122/GraphicsCourse">https://github.com/JunkyX1122/GraphicsCourse</a>.<br>
 Majority of code that isn't tutorial code can be found in the 'Blank Project' and 'Shaders' folders.
 <br><br>
 <h1>The Cooler Parts</h1>
 Despite this project being my first time propperly working with the graphics pipeline and lower-level rendering, I already had many ideas as to how to enhance the scene. I really like visual flare. This includes:
-<li><a href="#Camera Work">Camera Work</a>
-<li><a href="#Scrolling Spherical Textures">Scrolling Spherical Textures</a>
-<li><a href="#Bloom Post Processing">Bloom Post Processing</a>
+<ul>
+<li><a href="#Camera Work">Camera Work</a></li>
+<li><a href="#Scrolling Spherical Textures">Scrolling Spherical Textures</a></li>
+<li><a href="#Bloom Post Processing">Bloom Post Processing</a></li>
 <li><a href="#Pixelize Post Process">Pixelize Post Process</a>
-</li>
+</li></ul>
 <div id="Camera Work"></div>
 <h2>Camera Work</h2>
 The part of the project I am proud of the most. I introduced movement smoothening by interpolating the camera's current position and its destination. I also applied this same logic to the yaw, pitch and roll of the camera.<br>

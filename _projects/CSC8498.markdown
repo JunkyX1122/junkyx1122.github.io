@@ -1,0 +1,31 @@
+---
+
+layout: project
+title: MComp Dissertation - Exploration of GPU Accelerated Rendering in OpenGL
+thumbnail: \assets\csc8498_thumbnail.jpg
+videolink: https://studio.youtube.com/video/gIa92k8-7dc/edit
+shortdescription: <li>University Dissertation<li>C++, OpenGL, Indirect Rendering<li>4 week development</li>
+permalink: /CSC8498
+priority: 3
+---
+<h2>Languages: C++, GLSL (Custom Engine). Grade: 73%.</h2>
+<h1>About</h1>
+For my end-of-year dissertation, we were given the task on demonstrating what we have learned and our capability to conduct 
+further research on existing information. The program and write-up had to fit within 4 weeks so we ensured we carefully 
+scoped the whole project. As I tend to focus more on visuals, I had decided to look into how we can improve performance 
+by offloading work from the CPU to the GPU. Primarily, I looked into how to utilise GPGPU programming to manage frustum 
+culling and initiating render calls. If you would like to read about the project in further detail, a copy of the paper can be 
+found below. <br><br>
+To summerise the main aims and objectives (quoting directly from Section 1.2 of the paper):<br><br><i>
+This project aims to investigate GPU-centred culling and rendering to measure the extent to which they improve the performance of a rendered scene compared to a CPU-centrally rendered scene. Achieving this will involve the completion of the following objectives:</i><br>
+<ul><i>
+<li>Investigate OpenGL’s compute shaders and how to set up and utilise them to accelerate the frustum culling process.</li>
+<li>Identify and understand alternatives of rendering to reduce the overhead of typical implementations of the rendering process.</li>
+<li>Implement frustum culling utilising OpenGL compute shaders.</li>
+<li>Implement one of these alternative rendering techniques to render a 3D scene with basic lighting and shading.</li>
+<li>Evaluate the performance of these implementations by comparing them to CPU-focused implementations with a non-moving set of meshes.
+</li></i>
+</ul>
+Dissertation paper at: <a href="https://docs.google.com/document/d/1Xiq5D-nRn0p9Pqu1rroZ6E1TqF94XFueyhJY9IZNEzA/edit?usp=sharing">https://docs.google.com/document/d/1Xiq5D-nRn0p9Pqu1rroZ6E1TqF94XFueyhJY9IZNEzA/edit?usp=sharing</a>.<br>
+Github repo at: <a href="https://github.com/JunkyX1122/gpu-opengl">https://github.com/JunkyX1122/gpu-opengl</a>.<br>
+Majority of code that isn't tutorial code can be found in the 'CSC8503' and 'CSC8503CoreClasses' folders.<br><br>

@@ -117,7 +117,7 @@ modelled off of the structure of classes in languages like C++.<br><br>
 <center><img src="assets/snowystandoffs_mainmenu_fresh.jpg"><br></center><br>
 As seen in the screenshot above, certain elements of the main menu are blacked out as they require reaching a certain point in the game. Save data in Danmakufu is handled by writing and reading
 to a .dat file. You can retrieve certain aspects of save data as all data is tagged with a string. As such, string manipulation is often used to make tracking save data strings simple. Below
-is some code borrowed from a fellow DNH developer as an example of utilising save data to record boss attack score.<br><br>
+is some code borrowed from a fellow DNH developer and reworked for utilising save data to record boss attack score.<br>
 <div class = "box">
     <pre>
 	LoadCommonDataAreaA2("History", DATA_HISTORY_PATH);

@@ -12,7 +12,8 @@ priority: 4
 <h1>About</h1>
 One of the many projects I have made within the engine <a href="https://en.touhouwiki.net/wiki/Touhou_Danmakufu">Danmakufu</a>. This was made
 as part of a contest where you had to take an existing early-game boss within a series determined by the judges and reimagine their fight as if
-they were the final boss.<br>
+they were the final boss. There were a total of 24 contestants and a time limit of one month. Working on the code, fight design, visual composition, 
+asset creation, debugging, playtesting and working with a 3D artist, I was able to rank 1st place!<br>
 
 <h1>Key Skills Used</h1>
 <li>Time Management
@@ -29,7 +30,7 @@ they were the final boss.<br>
 <li>Communication with Asset Creators
 <li>Game Feel
 <li>Game Flow
-</li>
+</li><br>
 <h1>Brief Engine Background Knowledge</h1>
 Due to how niche this engine is, a brief explaination of the engine is probably needed. In short, Danmakufu is a 2D engine designed specifically for the creation of bullet hells. It's optimised to handle a large amount of projectiles on screen and was initially created for japanese fans of the 'Touhou' series to make their own inspired games. Everything is coded in the scripting language 'DNH', which resembles C. By default, the engine comes with the basics of a game engine (sprite rendering, sound ect.) but in comparison to more well known engines, it's increadibly lacking. Despite all this, it is still the main choice of engine when it comes to making Touhou-inspired games due to many of the most popular fangames using this engine.
 

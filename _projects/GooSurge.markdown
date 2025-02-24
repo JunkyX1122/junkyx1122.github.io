@@ -8,7 +8,7 @@ shortdescription: <li>Pirate Software Game Jam 14<li>Unity/C# based game with te
 permalink: /GooSurge
 priority: 5
 ---
-<h2>Languages: C#</h2>
+<h2>Languages: C# (Unity)</h2>
 <h1>About</h1>
 Goo Surge was a game made for the Pirate Software Game Jam, with the central theme of the games being the phrase 'It's Spreading'. The game involves the player traversing a map, searching for the goo containers in order to break the substance out and cause destruction. Myself and three other teammates spend 2 weeks of our winter break putting together a game with a technically impressive central mechanic, that being the spreading and control over the goo. We managed to release the game with a full gameplay loop whilst maintaining a framerate above 60fps, with the only major critisism of the game being the lack of context cues/tutorial that helped instruct the player on what to do.<br><br>
 My main contributions to the game were:
@@ -18,6 +18,24 @@ My main contributions to the game were:
 <li>Some art used inside and out of the game (including the main thumbnail art).<br><br>
 Github repo at: <a href="https://github.com/HeavyMetalGameDev/pirate-game-jam">https://github.com/HeavyMetalGameDev/pirate-game-jam</a>.<br>
 Download game at: <a href="https://nijelous.itch.io/goo-surge">https://nijelous.itch.io/goo-surge</a>.<br><br>
+<h1>Key Skills Used</h1>
+<li>HLSL
+<li>Teamwork
+<li>Communication
+<li>Brainstorming
+<li>DevOps
+<li>Agile
+<li>Project Management
+<li>Tools Programming
+<li>Game Feel
+<li>VFX Design
+<li>Debugging
+<li>Performance Measuring
+<li>Version Control 
+<li>GitHub
+<li>Problem Solving
+</li>
+<br>
 <h2>Camera Movement</h2>
 We decided on having the camera pan towards where the mouse was going to point. Because the mouse was probably going to move around a lot, I needed to ensure that the camera moved
 smoothly regardless of how drastic the mouse movements were.<br><br>

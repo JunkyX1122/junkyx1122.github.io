@@ -8,7 +8,7 @@ shortdescription: <li>University Coursework<li>C++/OpenGL rendering project<li>4
 permalink: /CSC8502
 priority: 3
 ---
-<h2>Languages: C++, GLSL</h2>
+<h2>Languages: C++, GLSL (Custom Engine)</h2>
 <h1>About</h1>
 For this module, I put together a space scene and planet surface scene using OpenGL. I implemented a variety of graphical techniques using the knowledge gained from tutorials and assistance from lecturers. Some of the basic graphical techniques that were covered within lecture material, which you can see within this project, include:
 <li>Texturing: as seen in every mesh on screen.

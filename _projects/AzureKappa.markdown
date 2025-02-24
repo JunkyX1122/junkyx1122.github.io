@@ -10,12 +10,30 @@ priority: 4
 ---
 <h2>Languages: DNH (C-Like Scripting Language)</h2>
 <h1>About</h1>
-One of the many projects I have made within the engine <a href="https://en.touhouwiki.net/wiki/Touhou_Danmakufu">Danmakufu</a>. 
+One of the many projects I have made within the engine <a href="https://en.touhouwiki.net/wiki/Touhou_Danmakufu">Danmakufu</a>. This was made
+as part of a contest where you had to take an existing early-game boss within a series determined by the judges and reimagine their fight as if
+they were the final boss.<br>
 
+<h1>Key Skills Used</h1>
+<li>Time Management
+<li>UI Design
+<li>VFX Design
+<li>Attention to Detail
+<li>Creative Thinking
+<li>Creativity
+<li>3D Maths
+<li>Parametric Equasions
+<li>Enemy AI Design
+<li>Creative Writing
+<li>3D Scene Composition
+<li>Communication with Asset Creators
+<li>Game Feel
+<li>Game Flow
+</li>
 <h1>Brief Engine Background Knowledge</h1>
 Due to how niche this engine is, a brief explaination of the engine is probably needed. In short, Danmakufu is a 2D engine designed specifically for the creation of bullet hells. It's optimised to handle a large amount of projectiles on screen and was initially created for japanese fans of the 'Touhou' series to make their own inspired games. Everything is coded in the scripting language 'DNH', which resembles C. By default, the engine comes with the basics of a game engine (sprite rendering, sound ect.) but in comparison to more well known engines, it's increadibly lacking. Despite all this, it is still the main choice of engine when it comes to making Touhou-inspired games due to many of the most popular fangames using this engine.
 
-Download game and code at: <a href="https://www.bulletforge.org/u/junky/p/azure-kappa">https://www.bulletforge.org/u/junky/p/azure-kappa</a>.<br>
+Download game and code at: <a href="https://www.bulletforge.org/u/junky/p/azure-kappa">https://www.bulletforge.org/u/junky/p/azure-kappa</a>.<br><br>
 <h1>Notable Parts of the Game</h1>
 
 <h2>Background-Foreground Interaction</h2>

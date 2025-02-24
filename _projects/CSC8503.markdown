@@ -8,7 +8,7 @@ shortdescription: <li>University Coursework<li>C++ physics, AI, networking devel
 permalink: /CSC8503
 priority: 2
 ---
-<h2>Languages: C++</h2>
+<h2>Languages: C++ (Custom Engine)</h2>
 <h1>About</h1>
 This module required me to create a small game in C++ using an engine build I had to build mostly from scratch. The game I ended up making was a third-person multiplayer game where players run around collecting crystals and bring them back to home base, whilst avoiding other players and the enemies within the level. I was required to implement the physics, enemy AI and a form of networking using the knowledge we gained from lectures and tutorials. Using the turoials I was able to set up:
 <li>Collision: Detection and resolution between rays, Axis-Aligned Bounding Boxes and spheres.

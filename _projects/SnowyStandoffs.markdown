@@ -14,11 +14,28 @@ One of the many projects I have made within the engine <a href="https://en.touho
 my dedication to complete large tasks and manage solo projects.<br>
 As this is one of my largest projects, feel free to just skim through the demonstration video if you are pressed for time. There is a lot for me to discuss and I would be happy to go into
 further detail on the aspects I do not bring up on this page.<br><br>
-Note: he video link provides is temporary and is a part of a demonstration stream.<br>
+Note: The video link provided is temporary and is a part of a demonstration stream.<br>
 
 <center><img src="assets/snowystandoffs_preview.jpg"><br></center><br>
 
-
+<h1>Key Skills Used</h1>
+<li>Time Management
+<li>Project Management
+<li>DevOps
+<li>Agile
+<li>Visual Debugging
+<li>Version Control
+<li>GitHub
+<li>Teamwork and communication with asset creators and playtesters
+<li>Creativity
+<li>HLSL Code
+<li>Game Design
+<li>Risk Assessment
+<li>Brainstorming and Concept Art
+<li>Menu and UI Design
+<li>Game Feel
+</li>
+<br>
 <h1>Brief Engine Background Knowledge</h1>
 Due to how niche this engine is, a brief explaination of the engine is probably needed. In short, Danmakufu is a 2D engine designed specifically for the creation of bullet hells. It's optimised to handle a large amount of projectiles on screen and was initially created for japanese fans of the 'Touhou' series to make their own inspired games. Everything is coded in the scripting language 'DNH', which resembles C. By default, the engine comes with the basics of a game engine (sprite rendering, sound ect.) but in comparison to more well known engines, it's increadibly lacking. Despite all this, it is still the main choice of engine when it comes to making Touhou-inspired games due to many of the most popular fangames using this engine.<br><br>
 <h1>Context</h1>
@@ -187,4 +204,29 @@ ensures that the attacks are ordered correctly for the practice menu to display.
 Availability of the attack and the history data is also displayed on this menu, and updates accordingly if you switch the playable team.<br><br>
 <h3>Difficulty and Player Selection</h3>
 There can only be one active difficulty and playable team at a time. Luckily, only the package script needs to concern itself on which of each is
-currently active.
+currently active.<br><br>
+<center><img src="assets/snowystandoffs_difficulty.jpg"><br></center><br>
+I only intended to implement two difficulties, which has become a standard trope for my work. Balancing will be discussed in a later section.
+Implementation of various difficulties within gameplay was very simple. At the start of every attack, the common data determining the 
+difficulty setting is retrieved and applied to a variable in which all attacks can access. Older works in the community tend to have difficulty variation
+be determined by what file is used for an attack. This saves a lot of time and reduces code repetition. Below is an example of how an attack varies depending 
+on difficulty.
+<div class = "box">
+    <pre>
+    let tot = [6,10][DIFFICULTY];
+    ascent(i in 0..tot)
+    {
+        let ang2 = ang + 360/tot*i*bit;
+        let x = ObjMove_GetX(objEnemy);
+        let y = ObjMove_GetY(objEnemy);
+        let speed = 7;
+        let obj = BloodShot(x, y, speed, ang2, 1.5, 60, [255,64,64], true);
+        ObjMove_AddPatternA2(obj, 0,   speed, NO_CHANGE, -speed/60, 0, 0);
+        ObjMove_AddPatternA2(obj, 110, 0,     NO_CHANGE,  2/50,     2, 0);
+        Homing(obj, [1.5,2][DIFFICULTY], 110, 50);
+    }
+    </pre>
+</div>
+<center><img src="assets/snowystandoffs_practice_difficulty_demo.jpg"><br>
+Left (Standard), Right (Original)
+</center><br><br>

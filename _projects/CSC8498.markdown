@@ -27,5 +27,5 @@ This project aims to investigate GPU-centred culling and rendering to measure th
 </li></i>
 </ul>
 Dissertation paper at: <a href="https://docs.google.com/document/d/1Xiq5D-nRn0p9Pqu1rroZ6E1TqF94XFueyhJY9IZNEzA/edit?usp=sharing">https://docs.google.com/document/d/1Xiq5D-nRn0p9Pqu1rroZ6E1TqF94XFueyhJY9IZNEzA/edit?usp=sharing</a>.<br>
-Github repo at: <a href="https://github.com/JunkyX1122/gpu-opengl">https://github.com/JunkyX1122/gpu-opengl</a>.<br>
+GitHub repo at: <a href="https://github.com/JunkyX1122/gpu-opengl">https://github.com/JunkyX1122/gpu-opengl</a>.<br>
 Majority of code that isn't tutorial code can be found in the 'CSC8503' and 'CSC8503CoreClasses' folders.<br><br>

@@ -17,7 +17,7 @@ For this module, I put together a space scene and planet surface scene using Ope
 <li>Per-fragment lighting: darkening areas not facing a central light source.</li>
 <li>Deffered lighting: as seen when viewing the crystals on the ground scene.
 </li></ul><br>
-Github repo at: <a href="https://github.com/JunkyX1122/GraphicsCourse">https://github.com/JunkyX1122/GraphicsCourse</a>.<br>
+GitHub repo at: <a href="https://github.com/JunkyX1122/GraphicsCourse">https://github.com/JunkyX1122/GraphicsCourse</a>.<br>
 Majority of code that isn't tutorial code can be found in the 'Blank Project' and 'Shaders' folders.
 <br><br>
 <h1>The Cooler Parts</h1>

@@ -17,7 +17,7 @@ My main contributions to the game were:
 <li>Ensuring that said player felt satisfying to control.</li>
 <li>Building the main tool needed make the enviroment.</li>
 <li>Some art used inside and out of the game (including the main thumbnail art).</li></ul>
-Github repo at: <a href="https://github.com/HeavyMetalGameDev/pirate-game-jam">https://github.com/HeavyMetalGameDev/pirate-game-jam</a>.<br>
+GitHub repo at: <a href="https://github.com/HeavyMetalGameDev/pirate-game-jam">https://github.com/HeavyMetalGameDev/pirate-game-jam</a>.<br>
 Download game at: <a href="https://nijelous.itch.io/goo-surge">https://nijelous.itch.io/goo-surge</a>.<br>
 <h1>Key Skills Used</h1>
 <ul>

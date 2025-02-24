@@ -17,7 +17,8 @@ hoping to get a job within the games industry and make a start to my game engine
 <br><br>
 This website is dedicated to showing off various projects I have worked on in and outside of education. Below are some images showing off the types of projects I have done. For information on individual projects, you can click on the <a href="/Portfolio">Portfolio</a> tab at the top of the page, or click on the images below.
 <br><br>
-
+GitHub Profile at: <a href="https://github.com/JunkyX1122">https://github.com/JunkyX1122</a>.<br>
+LinkedIn Profile at: <a href="https://www.linkedin.com/in/erick-grant-daleon-634532220/">https://www.linkedin.com/in/erick-grant-daleon-634532220/</a>.<br>
 <style type="text/css"> 
         .brmedium { 
             display: block; 

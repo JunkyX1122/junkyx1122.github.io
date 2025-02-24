@@ -56,7 +56,7 @@ In total, the project as of December 2024 contains:
 <li>Save data and unlockables</li>
 </ul>
 A lot of the hard work is pretty much done, just missing the regular stage portions for each stage. Once the stage portions are complete, there will be a full release. But for now, I can provide a link to those who view my portfolio.<br>
-Github link at: <a href="https://github.com/JunkyX1122/secret-santa-2024">https://github.com/JunkyX1122/secret-santa-2024</a>.<br><br>
+GitHub link at: <a href="https://github.com/JunkyX1122/secret-santa-2024">https://github.com/JunkyX1122/secret-santa-2024</a>.<br><br>
 
 <h2>Development Cycle</h2>
 Because of the scale of this project, I had to do a lot more planning than I usually do for these bullet-hell projects. We were given a time limit of 2 months and I
